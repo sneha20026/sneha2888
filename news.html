@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Marks </title>
+    
+<style>
+html
+{
+ scroll-behavior:smooth;
+}
+
+ @keyframes blink
+{
+ from{opacity:0;color:yellow;}
+ to{opacity:1;color:red;}
+}
+
+ header
+{
+ text-align:center;
+ box-sizing:border-box;
+ background:black;
+ padding:30px;
+ color:white;
+ font-size:50px;
+ box-shadow:10px 10px 10px gray;
+ margin-top:10px;
+ }
+
+ #my
+ {
+ color:white;
+ transition:0.50s;
+ animation:blink 1s infinite alternate;
+ }
+
+ @keyframes change
+ {
+  10%{content:"War in Gulf";color:yellow;}
+  30%{content:"Rain In Delhi";transform:scale(1.5);}
+  40%{content:"WElcome to Area Animation";background:lime;}
+  50%{content:"Lakshay Exhibition....";color:orange;}
+  60%{content:"Lpg Cylinder Crisis";color:white;background:black;}
+  70%{content:"India Today ...";}
+  80%{content:"Stock Market down";}
+  90%{content:"Rain In Delhi";}
+  100%{content:"Learn UI/UX  from Arena";}
+  }
+
+  #news
+  {
+   color:cyan;
+  }
+
+  #news::after
+  {
+   content:"Today";
+   transition:2s;
+   animation:change 12s infinite alternate;
+  }
+
+   section
+  {
+     box-shadow:10px 10px 10px gray;
+     text-align:justify;
+     text-indent:140px;
+     padding:50px;
+     height:500px;
+     border:2px black ridge;
+   //text-align:center;
+   }
+
+    section h1
+   {
+    text-align:center;
+   }
+
+   ol
+   {
+    }
+
+    li
+   {
+    display:inline;
+    padding:130px;
+    margin-top:20px;
+   }
+    </style>
+</head>
+<body>
+
+<a name="top"></a>
+<header>
+    <span id="my" >Hyper Link Book Marks</span>
+    <div id="news"> News:</div>
+</header>
+
+<br/>
+<ol>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#policy">Policy</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#end">Goto End</a></li>
+</ol>
+
+<main>
+    <h1>
+    </h1>
+</main>
+
+<section>
+    <a name="about"></a>
+    <h1>About</h1>
+    <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    </p>
+    <a href="#top">Back</a>
+</section>
+
+<section>
+    <a name="policy"></a>
+    <h1>Policy</h1>
+    <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    </p>
+    <br/>
+    <a href="#top">Back</a>
+</section>
+
+<section>
+    <a name="services"></a>
+    <h1>Services</h1>
+    <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+    </p>
+    <br/>
+    <a href="#top">Back</a>
+</section>
+
+<a href="#top">Back</a>
+<a name="end"></a>
+<footer style="background:black;height:300px;color:white;clear:both">
+    Footer
+</footer>
+
+</body>
+</html>
