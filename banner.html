@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+</head>
+
+
+<style>
+@keyframes runtext
+{
+    from{left:-500px;}
+    to{left:1400px;}
+}    
+
+
+
+@keyframes changepic
+{
+10%{background-image:url(images/mountains\ 1.jpg);}
+20%{background-image:url(images/Mountains\ 1.jpg);}
+30%{background-image:url(images/Mountains\ 3.jpg);}
+40%{background-image:url(images/Mountains\ 3.jpg);}
+50%{background-image:url(images/Mountains\ 4.jpg);}
+60%{background-image:url(images/Mountains\ 4.jpg);}
+70%{background-image:url(images/Mountains\ 5.jpg);}
+90%{background-image:url(images/Mountains\ 5.jpg);}
+100%{background-image:url(images/Mountains\ 6.jpg);}
+120%{background-image:url(images/Mountains\ 6.jpg);}
+    
+}
+@keyframes mycolor
+{
+10%{color:yellow}
+30%{color:green}
+50%{color:purple}
+70%{color:cyan}
+
+
+}
+
+header
+{
+background:black;
+background-image:url(images/Mountains\ 1.jpg)
+background-repeat: no-repeat;
+background-size: 100% 100%;
+height:600px;
+colour:white;
+width:90%;
+margin:auto;
+overflow:hidden;
+animation:changepic 12s linear infinite;    
+}
+
+#text
+{
+    margin-top:5px;
+    padding-top:30px;
+    font-family:arial black;
+    font-size:50px;
+    color:red;
+    text-shadow:5px 5px 5px black;
+    text-transform:uppercase;
+    //background:yelloew;
+    position:relative;
+    left:-500px;
+    top:100px;
+    animation:runtext 32s linear infinite alternate, mycolor 2s infinite;
+    }
+
+</style>
+<body>
+<header>
+    <div id="text"> Welcome to Nature care</div>
+</header>    
+    
+</body>
+</html>
