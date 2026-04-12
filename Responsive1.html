@@ -1,0 +1,324 @@
+<!dcotype html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<header>
+
+
+ 		<div id="col1">
+			profile pic
+		</div>
+ 		<div id="col2">
+			banner
+                 <img src="images/mountains 8.png" height=100% width=100%>
+		</div>
+
+
+
+
+
+</headeR>
+<title>My Responsive content </title>
+<style>
+div
+{
+border:1px black solid;
+pading:10px;
+}
+
+#col1
+{
+height:100px;
+width:20%;
+margin:10px;
+border-radius:100px;
+}
+#col2
+{
+width:60%;
+height:200px;
+margin:10px;
+}
+
+
+header
+{
+border:1px black solid;
+//height:300px;
+display:flex;
+// flex-direction:column;
+flex-direction:row;
+//justify-content:end;
+//justify-content:start;
+//justify-content:center;end;
+justify-content:space-between;
+flex-wrap:wrap;
+
+
+}
+
+main
+{
+display:flex;
+flex-wrap:wrap;
+
+}
+
+.cardstyle
+{
+width:60%;
+height:180px;
+box-shadow:10px 10px 10px black;
+
+
+}
+
+
+.pic {
+width: 100%;
+}
+
+/* Navigation Styles */
+nav {
+width: 90%;
+margin: 50px auto;
+text-align: center;
+}
+
+nav ol li {
+list-style: none;
+background: teal;
+margin-left: -2px;
+padding: 20px;
+text-align: center;
+cursor: pointer;
+box-shadow: 10px 10px 10px black;
+transition: 0.50s;
+}
+
+nav ol li:hover {
+background: white;
+transform: scale(1.10);
+}
+
+/* Footer & Social Media Styling (From Images) */
+footer {
+background: red;
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-top: 200px;
+clear: both;
+}
+
+footer #info, #sitemap, #socialmedia {
+width: 100%;
+padding: 10px;
+}
+
+#sitemap ul li, #socialmedia ul li {
+list-style: none;
+text-align: left;
+margin-left: 40%;
+}
+
+/* Link Styling */
+a:link { color: yellow; text-decoration: none; }
+a:visited { color: yellow; }
+a:hover { text-decoration: underline; color: red; }
+a:active { color: orange; }
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px)
+ {
+
+ body{background: #994eb1;}
+#col2{display:none}
+header{justify-content:center;}
+.cardstyle{ margin: 40px auto auto auto;}
+header{justify-content:center;}
+
+.cardstyle{
+margin:auto;
+margin-top:40px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px)
+ {
+
+body{background: #d22d48;}
+#col2{width:70%;}
+#col1{width:10%;
+height:40px;
+}
+main{
+justify-content:center;
+}
+.cardstyle{width:40%;
+margin:10px;
+}
+
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+ {
+  body{background:#48dd22;}
+  #col1{width:15%;height:120px;}
+#col2{height:200px}
+.cardstyle{width:20%;
+margin:10px;
+}
+
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+body{background:pink;}
+#col2{width:90%;height:400px;margin:auto;}
+#col1{display:none;}
+}
+.pic
+{
+width:100%;
+}
+
+nav
+{
+width:90%;
+margin:auto;
+//background:red;
+text-align:centre;
+margin:50 px
+}
+
+
+
+nav ol li
+{
+list-style:none;
+background:teal;
+margin-left:-2px;
+
+padding:20px;
+text-align:centre;
+cursor:pointer;
+box-shadow:10px 10px 10px black;
+transition:0.50s;
+}
+
+nav ol li:hover
+{
+background:white;
+transform:scale(1.10);
+}
+
+a:link{color:yellow;text-decoration:none;}
+a:visited{color:yellow;}
+a:hover{text-decoration:underline;color:red;}
+a:active{}
+
+
+
+</style>
+
+
+<body>
+
+<nav>
+<!--order list -->
+<ol>
+<li><a href="tata.html">Home</li>
+<li><a href="#">Practice work</li>
+<li><a href="#">project</li>
+<li><a href="http://google.com">Google</li>
+
+
+
+<ol>
+<body>
+<main>
+<div class="cardstyle" id="card1">
+<img src="images/mountains 1.jpg" class="pic">
+
+</div>
+<div class="cardstyle" id="card2">
+<img src="images/mountains 2.jpg" class="pic" height="100%">
+</div>
+
+
+</div>
+<div class="cardstyle" id="card3">
+<img src="images/mountains 3.jpg" class="pic" height="100%">
+</div>
+
+
+</div>
+<div class="cardstyle" id="card4">
+ <img src="images/mountains 4.jpg" class="pic" height="100%">
+</div>
+
+</div>
+<div class="cardstyle" id="card5">
+<img src="images/mountains 5.jpg" class="pic" height="100%">
+</div>
+
+</div>
+<div class="cardstyle" id="card6">
+<img src="images/mountains 7.jpg"" class="pic" height="100%">
+</div>
+
+</div>
+<div class="cardstyle" id="card7">
+<img src="images/mountains 8.png" class="pic" height="100%">
+</div>
+
+</div>
+<div class="cardstyle" id="card8">
+<img src="images/mountains 9.jpg" class="pic" height="100%">
+</div>
+
+
+
+
+
+
+</main>
+
+
+
+</body>
+
+
+
+
+
+
+
+</footer>
+
+
+</html>
+
