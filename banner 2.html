@@ -1,71 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner type 2</title>
 </head>
-
-
+<body>
+<header>
+    <img src="Images/scene (1).jpeg" class="pic">
+    <img src="Images/scene (2).jpg" class="pic">
+    <img src="Images/scene (3).jpg" class="pic">
+    <img src="Images/scene (4).jpg" class="pic">
+    <img src="Images/scene (5).jpg" class="pic">
+</header>
+</body>
 <style>
-@keyframes runbanner
-{
-10%{left:0%;}
+    @keyframes runbanner
+    {
+        10%{left:0%;}
+        20%{left:-19%;}
+        30%{left:-19%;}
+        40%{left:-38%;}
+        50%{left:-38%;}
+        60%{left:-57%;}
+        70%{left:-57%;}
+        80%{left:-76%;}
+        90%{left:-76%;}
+    }
+    body{
+        overflow:hidden;
+    }
 
-
-20%{left:-19%;}
-30%{left:-19%;}
-
-40%{left:-38%;}
-50%{left:-38%;}
-
-60%{left:-57%;}
-70%{left:-57%;}
-
-80%{left:-76%;}
-90%{left:-76%;}
-
-
-}    
-
-body
-{
-   overflow:hidden;     
-}
-header
-{
-//background:rgb(214, 45, 45);
-width:550%;
-height:600px;
-overflow:hidden;    
+header{
+    //background: rgb(5, 5, 37);
+    width:550%;
+    height:600px;
+    overflow:hidden;
 }
 
-
-    
 .pic
 {
     width:19%;
     height:100%;
-    position:absolute;
+    position:relative;
     left:0%;
-    animation:runbanner 15s linear infinite alternate;
+    animation:runbanner 20s linear infinite  ;
 
-
-}    
-
+}
 </style>
 
-
-<body>
-<header>
-
-     <img src="images/scene (1).jpeg" class="pic">
-     <img src="images/scene (2).jpg" class="pic">
-       <img src="images/scene (3).jpg" class="pic">
-        <img src="images/scene (4).jpg" class="pic">
-         <img src="images/scene (5).jpg" class="pic">
     
-      
-
-</header>        
-</body>
 
 </html>
