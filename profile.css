@@ -1,0 +1,23 @@
+/* Left text */
+
+.text h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.text h3{
+color:#555;
+}
+
+/* right big profile */
+
+.profile img{
+width:300px;
+height:300px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid rgb(255, 255, 255);
+//box-shadow:0 10px 30px rgba(139, 12, 12, 0.2);
+margin-top:60px;
+
+}
