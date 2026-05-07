@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes ani{
+        from { transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg); }
+        to { transform: rotateY(360deg) rotateX(70deg) rotateZ(30deg); }
+    }
+
+    #container{
+        width:500px;
+        height:500px;
+        background-color:(15, 16, 16);
+        margin:auto;
+        text-align: center;
+        perspective:360px;
+
+    }
+    header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:40%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+
+}
+
+#p1    {
+  width:200px;
+  height:200px;
+  background-color:rgb(15,16,16);
+  position:relative;
+  top:100px;
+  left:100px;
+  animation:ani 5s linear infinite alternate;  
+}
+
+#p2    {
+    width:200px;
+    height: 200px;
+    background-color:rgb(15,16,16);
+    position:relative;
+    top:-100px;
+  left:100px;
+  backface-visibility: hidden;
+  animation:ani 5s linear infinite alternate;
+}
+.pic
+{
+    width:100%;
+    height:100%;
+
+}
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    height: auto;
+    width:100%
+}
+
+body
+{
+padding: 0;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #fbffca;
+
+}
+
+</style>
+<body>
+<header>Transform 3d Animation</header>
+<body>
+    <div id="container">
+
+
+    <div id="p1">
+  <img src="images/a13.jpg" class="pic">
+
+    </div>
+
+
+    <div id="p2">
+  <img src="images/ap2.jpg" class="pic">
+
+    </div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 My Website</p>
+    <div class="footer-right">
+                <p>call us 011-555-8787</p>
+                <p>Email:sneharana0909@gmail.com</p>
+                <p>New delhi-Delhi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+            </div>
+        </footer>
+</html>
+</footer>
+
+</body>
+</html>
