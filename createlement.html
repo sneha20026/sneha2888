@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbffca;
+    }
+    
+
+header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:50%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+}
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top: 40px;
+}
+</style>
+<body>
+    <header>
+Creating Tag by JavaScript  
+</header>
+   
+
+     <script>
+
+    var p= document.createElement("img")
+    document.body.appendChild(p)
+      p.src="images3/u7.jpg"
+      p.style="transition:0.50s;margin-left:35%;border-radius:10px;cursor:pointer;"
+      document.title="No Error"
+      p.style.width="30%"
+      p.style.boxShadow="5px 5px 5px gray"
+      
+      
+      p.onclick = function()
+      {
+        p.src="images3/u7.jpg"      
+    }
+    p.onmouseout = function()
+    {
+        p.src="images3/u9.jpg"
+        p.style.transform="scale(1)"
+    
+    }
+    p.onmouseover= function()
+    {
+        this.style.transform="scale(1.30s)"
+    }
+    
+</script>
+</body>
+<footer>
+    <p>© 2026 My Website</p>
+    <div class="footer-right">
+                <p>call us 011-555-8787</p>
+                <p>Email:sneharana0909@gmail.com</p>
+                <p>New delhi-Delhi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+            </div>
+        </footer>
+</html>
+</html>
