@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbffca;
+}
+
+header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:50%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+
+}
+
+
+.box
+{
+   
+    border-radius: 10px;
+    transition: 0.50s;
+    width:300px;
+    border:2px black solid;
+    position: absolute;
+    top: 200px;
+    left:600px;
+    text-align: center;
+}
+
+.mystyle
+{
+    //background:rgb(231,221,221);
+}
+
+
+</style>
+<body>
+    <header>Creating Div diolouge box</header>
+    <script>
+        document.title="Create Dialouge box"
+
+        var d = document.createElement("div");
+        document.body.appendChild(d);
+        d.className="box mystyle"
+        d.innerHTML="<button style='margin-top:5px; margin-right:250px; cursor:pointer;' onclick='closedilog()'><h9>X</h9></button>"
+        d.innerHTML+="<h1>2D CARTOON</h1>"
+        d.innerHTML+="<hr color='brown' size='5'/>"
+        d.innerHTML+="<img src='Images3/a90.gif' style='width:100%;height:100%;'>"
+
+        function closedilog()
+        {
+            document.body.removeChild(d)
+        }
+        </script>
+
+    
+</body>
+</html>
