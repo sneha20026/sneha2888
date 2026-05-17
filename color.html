@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbffca;
+}
+
+header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:50%;
+margin:auto;
+margin-bottom:120px;
+margin-top:20px;
+
+}
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+<header>
+Random Colour of Background
+</header>
+
+    <script>
+        var b = document.createElement("button")
+        b.innerHTML="Change Random Colours"
+        document.body.appendChild(b)
+
+        b.innerHTML="Change the Background Colours"
+        b.style.padding="15px 25px"
+        b.style.fontSize="20px"
+        b.style.background="brown"
+        b.style.color="white"
+        b.style.border="none"
+        b.style.borderRadius="10px"
+        b.style.cursor="pointer"
+        b.style.margin="130px auto"
+        b.style.transition="0.50s"
+        b.style.display="block"
+
+    function randomcolor()
+        {
+            var red= Math.round(Math.random()*255)
+            var green= Math.round(Math.random()*255)
+            var blue= Math.round(Math.random()*255)
+            var c = "rgb("+red+","+green+","+blue+")"
+            //alert(c)
+            document.body.style.background= c
+        }
+        b.onclick = randomcolor
+        
+            b.onmouseover= function()
+        {
+            b.style.transform= "scale(1.2)"
+        }
+         b.onmouseout= function()
+        {
+            b.style.transform= "scale(1)"
+        }
+    </script>
+
+    <footer>
+    <p>© 2026 My Website</p>
+    <div class="footer-right">
+                <p>call us 011-555-8787</p>
+                <p>Email:sneharana0909@gmail.com</p>
+                <p>New delhi-Delhi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+            </div>
+        </footer>
+</html>
+</footer>
+
+</body>
+</body>
+</html>
