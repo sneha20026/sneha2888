@@ -1,84 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Simple Education Navbar</title>
-</head>
+<title>AOTM WORK</title>
 
 <style>
+    {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
 
-.banner{
-    width:100%;
-    height:100vh;
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* SECTION */
+
+.course-section{
+    padding:5px 8%;
+}
+
+.course-title{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:50px;
+    color:#13242b;
+}
+
+/* COURSE BOXES */
+
+.course-container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.course-card{
+    width:300px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
     overflow:hidden;
+    transition:0.5s;
     position:relative;
 }
 
-.banner video{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    padding-top: 50px;
-    padding-bottom: 50px;
+/* HOVER EFFECT */
+
+.course-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 0 25px #38bdf8;
 }
 
-.content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    color:white;
-    text-align:center;
-    font-size:40px;
-    font-family:Arial;
+/* IMAGE */
+
+.course-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
 }
+
+/* CONTENT */
+
+.course-content{
+    padding:20px;
+}
+
+.course-content h2{
+    margin-bottom:10px;
+    color:brown;
+}
+
+.course-content p{
+    font-size:15px;
+    line-height:24px;
+    margin-bottom:20px;
+}
+
+/* BUTTON */
+
+.course-btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#05101f;
+    color:#ffffff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.course-btn:hover{
+    background:brown;
+    transform:scale(1.1);
+}
+
+/* BADGE */
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#ff004f;
+    padding:6px 15px;
+    border-radius:20px;
+    font-size:14px;
+}
+
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial;
 }
 
+body{
+    background: #fbffca;
+    color:rgb(7, 30, 53);
+}
 
+/* NAVBAR */
 
-.navbar{
-    background:#1e3a8a;
-    padding:18px 50px;
-
+nav{
+    width:100%;
+    padding:20px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    background:brown;
+    backdrop-filter:blur(10px);
+    z-index:1000;
 }
 
 .logo{
-    color:white;
-    width: 20%;
+    font-size:32px;
     font-weight:bold;
-    height:50px;
+    color:white;
 }
 
-.nav-links{
+nav ul{
     display:flex;
     list-style:none;
+    gap:30px;
 }
 
-.nav-links li{
-    margin-left:25px;
-}
-
-.nav-links li a{
-    color:white;
+nav ul li a{
     text-decoration:none;
+    color:white;
     font-size:18px;
-    transition:0.3s;
+    transition:0.5s;
 }
 
-.nav-links li a:hover{
-    color:#ff1d52;
+nav ul li a:hover{
+    color:#f0ff46;
+}
+
+/* HERO SECTION */
+
+.hero{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 10%;
+    padding-bottom: 40px;
+}
+
+/* LEFT SIDE */
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:65px;
+    line-height:80px;
+    margin-bottom:25px;
+}
+
+.hero-text span{
+    color: brown;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:35px;
+    color:#05101f;
+    margin-bottom:35px;
+}
+
+/* BUTTONS */
+
+.hero-btn{
+    display:inline-block;
+    padding:15px 35px;
+    margin-right:15px;
+    background:#05101f;
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:0.5s;
+}
+
+.hero-btn:hover{
+    transform:translateY(-5px);
+    background:brown;
+}
+
+.hero-btn2{
+    background:transparent;
+    color:rgb(0, 0, 0);
+    border:2px solid #05101f;
+}
+
+/* RIGHT SIDE IMAGE */
+
+.hero-image{
+    width:45%;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 0 10px #05101f;
+    transition:0.5s;
+}
+
+.hero-image img:hover{
+    transform:scale(1.03);
 }
 
 </style>
@@ -86,38 +248,141 @@
 
 <body>
 
-<nav class="navbar">
+<!-- NAVBAR -->
 
-    <div class="logo">
-      <img src="images3/a24.png">
-    </div>
+<nav>
 
-    <ul class="nav-links">
+<div class="logo">
+ARENA ANIMATION
+</div>
 
-        <li><a href="#">Home</a></li>
-
-        <li><a href="#">Courses</a></li>
-
-        <li><a href="#">About</a></li>
-
-        <li><a href="#">Contact</a></li>
-
-    </ul>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Courses</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
 
 </nav>
 
+<!-- HERO SECTION -->
 
-</body>
+<section class="hero">
+
+    <!-- LEFT -->
+
+    <div class="hero-text">
+
+        <h1>
+            Build Your
+            <span>Future Skills</span>
+        </h1>
+
+        <p>
+            Learn Web Development, Graphic Design,
+            3D, VFX Animation and Professional Skills
+            from industry experts.
+        </p>
+
+        <a href="" class="hero-btn">
+            Explore Courses
+        </a>
+
+        <a href="#" class="hero-btn hero-btn2">
+            Join Now
+        </a>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="hero-image">
+
+        <img src="images3/a27.jpg">
+
+    </div>
+
+</section>
+
+
 </head>
-
 <body>
 
-<div class="banner">
+<section class="course-section">
 
-    <video autoplay muted loop>
-        <source src="images3/a25.mp4" type="video/mp4">
-    </video>
+<h1 class="course-title">Our Creative Courses</h1>
 
+<div class="course-container">
+
+    <!-- CARD 1 -->
+
+    <div class="course-card">
+
+        <span class="badge">Popular</span>
+
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+        <div class="course-content">
+
+            <h2>Web Development</h2>
+
+            <p>
+                Learn HTML, CSS, JavaScript and build modern responsive websites.
+            </p>
+
+            <a href="#" class="course-btn">Enroll Now</a>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="course-card">
+
+        <span class="badge">New</span>
+
+        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6">
+
+        <div class="course-content">
+
+            <h2>Graphic Design</h2>
+
+            <p>
+                Master Photoshop, Canva and creative designing techniques.
+            </p>
+
+            <a href="#" class="course-btn">Enroll Now</a>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="course-card">
+
+        <span class="badge">Trending</span>
+
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+        <div class="course-content">
+
+            <h2>Digital Marketing</h2>
+
+            <p>
+                Learn SEO, social media marketing and online branding.
+            </p>
+
+            <a href="#" class="course-btn">Enroll Now</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+</body>
 </html>
-
-aotmfile
