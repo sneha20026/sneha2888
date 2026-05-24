@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbffca;
+}
+
+    
+header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:50%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+
+}
+
+/* Gallery Container */
+#gallery{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+    margin-left: 40px;
+}
+
+/* Images */
+.pic{
+    width:30%;
+    height:260px;
+    background: rgb(202, 251, 255);
+    padding:10px;
+    border-radius:10px;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+/* Hover Effect */
+.pic:hover{
+    transform:scale(0.70s);
+}
+
+</style>
+<header>
+Interactive Gallery  
+</header>
+
+<!-- Gallery Container -->
+<div id="gallery"></div>
+
+
+    <script>
+function preload()
+{
+
+
+    document.title="No Error"
+    for(var i = 1;i<=8;i++)
+{
+
+
+var u = new Image()
+document.body.appendChild(u)
+u.className="pic"
+u.src="images3/u"+i+".jpg"
+   document.getElementById("gallery").appendChild(u)
+
+        
+        u.onmouseover = function()
+        {
+            this.style.transform = "scale(1.03)"
+        }
+
+        u.onmouseout = function()
+        {
+            this.style.transform = "scale(1)"
+        }
+
+}
+}
+document.addEventListener("load",preload())
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+
+    
+    
+  
+    
+    
+
+</body>
+</html>
+
