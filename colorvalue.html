@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbffca;
+}
+
+header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:50%;
+margin:auto;
+margin-bottom:80px;
+margin-top:20px;
+
+}
+
+#box{
+    width:40%;
+    height:350px;
+    margin:50px auto;
+    border-radius:25px;
+    background:rgb(186, 70, 21);
+    transition:1s;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.3);
+    cursor:pointer;
+    
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+   <header>
+Change Random Colours  
+</header>
+    <Script>
+        var t 
+        var r,g,b,c
+        function show()
+        {
+            r = Math.round(Math.random()*255)
+            g = Math.round(Math.random()*255)
+             b = Math.round(Math.random()*255)
+             c=`rgb(${r},${g},${b})`
+            document.getElementById("box").style.background = c
+             document.title = c
+
+        }
+           t = setInterval("show()",1000)
+           document.body.onclick = function()
+         {
+            clearInterval(t)
+            alert("Set interval is stop now")
+         }  
+     
+
+         </Script>
+<body>
+         <div id="box">
+
+         </div>
+
+
+         <footer>
+    <p>© 2026 My Website</p>
+    <div class="footer-right">
+                <p>call us 011-555-8787</p>
+                <p>Email:sneharana0909@gmail.com</p>
+                <p>New delhi-Delhi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+            </div>
+        </footer>
+</html>
+</footer>
+</body>
+</html>
