@@ -259,7 +259,6 @@ nav ul li a:hover{
 
 <div class="logo">
 ARENA ANIMATION
-GTB NAGAR
 </div>
 
 
@@ -760,11 +759,9 @@ overflow:hidden;
 
 .event-container{
     display:flex;
-
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     margin-right: 100px;
     width: 100%;
-    
     gap:30px;
 }
 
@@ -772,12 +769,8 @@ overflow:hidden;
 
 .event-card{
     background:white;
-
-
     overflow:hidden;
-
     transition:0.5s;
-
     box-shadow:0px 10px 20px rgba(0,0,0,0.3);
 }
 
@@ -790,9 +783,7 @@ overflow:hidden;
 .event-card img{
     width:300px;
     height:220px;
-
     object-fit:cover;
-
     display:block;
 }
 
@@ -812,6 +803,48 @@ overflow:hidden;
     line-height:28px;
     margin-bottom:20px;
 }
+
+
+/* Section */
+
+.map-section{
+    padding:60px;
+    text-align:center;
+}
+
+/* Heading */
+
+.map-section h1{
+    color:rgb(0, 0, 0);
+    font-size:30px;
+    margin-bottom:20px;
+    margin-top: -50px;
+    margin-right:900px;
+    margin-left: -150px;
+
+}
+
+/* Map Container */
+
+.map-container{
+    width:1390px;
+    display:flex;
+    justify-content:center;
+}
+
+/* Map */
+
+.map-container iframe{
+
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:20px;
+    padding:8px;
+    background: #051457;
+    box-shadow:0px 10px 10px rgba(0,0,0,0.4);
+}
+
 
 </style>
 
@@ -878,16 +911,32 @@ overflow:hidden;
                 <p>
                     Celebrate achievements, performances,
                     and creative activities with students.
-                </p>
-
-               
+                </p> 
 
             </div>
 
         </div>
 
-        
+    </div>
 
+</section>
+
+</head>
+
+<body>
+
+<section class="map-section">
+
+    
+    <h1>Our location in Google Maps</h1>
+
+    <div class="map-container">
+
+        <!-- Google Map -->
+
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.641120018455!2d77.20261057501077!3d28.700380180997296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfdee23a9f1fd%3A0x7eeb2fefc55b4be6!2sArena%20Animation%20-%20Best%20Animation%20Institute%20in%20Delhi!5e0!3m2!1sen!2sin!4v1779792888584!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe>
 
     </div>
 
@@ -896,5 +945,4 @@ overflow:hidden;
 </body>
 </html>
 
-</body>
-</html>
+
