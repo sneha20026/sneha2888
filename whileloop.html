@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbffca;
+}
+table{
+    margin:70px auto;
+    background:white;
+    padding:10px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0px 4px 20px rgba(0,0,0,0.2);
+   
+}
+
+     button
+     {
+          width: 40px;
+          height: 40px;
+          border-radius: 100px;
+          box-shadow: 5px 5px 5px rgb(158, 152, 152);
+          cursor: url('images brush.png'), auto;
+     }
+
+     header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:50%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+
+}
+.container{
+    width:350px;
+    padding:25px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+    margin: 50px auto;
+    
+}
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+<header>
+COLOR SELECTOR PALATTE    
+</header>
+<body>
+
+    
+     <table border="0" cellpadding="5">
+        <script>
+          var row = 10
+          var col = 10
+          var c =1 
+          
+          while(c<=row)
+          {
+
+
+            document.write("<tr>")
+                      for(var i = 1;i<=col;i++)
+                           {
+                            var red = Math.round(Math.random()*255)
+                             var green = Math.round(Math.random()*255)
+                              var blue = Math.round(Math.random()*255)
+                               var mycolor= `rgb(${red},${green},${blue})`
+
+                                    document.write("<td><button onclick='setcolor(this)'style='color:red;background:"+mycolor+"'></button")
+                                    }
+
+            document.write("</tr>")
+            
+            
+
+            c++
+
+         function setcolor(d)
+         {
+          document.body.style.background = d.style.background
+
+         }
+
+
+
+         }
+         
+       document.title = "Ready"
+       </script>
+       </table>
+       
+       </body>
+       </html>
+                           
+          
+
+
+          
+
+        </script>
+     </table>
+
+     <footer>
+    <p>© 2026 My Website</p>
+    <div class="footer-right">
+                <p>call us 011-555-8787</p>
+                <p>Email:sneharana0909@gmail.com</p>
+                <p>New delhi-Delhi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+            </div>
+        </footer>
+</html>
+</footer>
+
+</html>
