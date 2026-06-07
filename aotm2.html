@@ -10,7 +10,13 @@
 html{
     scroll-behavior:smooth;
 }
-
+h5{
+    font-size: 68px;
+}
+h1{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .course-section{
     padding:5px 8%;
     scroll-margin-top:120px;
@@ -18,10 +24,10 @@ html{
 
 .course-title{
     text-align:center;
-    font-size:45px;
+    font-size:40px;
     margin-bottom:60px;
     color:#131212;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 /* COURSE BOXES */
@@ -36,17 +42,18 @@ html{
 
 .course-card{
     width:300px;
-    border-radius:100px;
+    border-radius:5px;
     transition:0.5s;
     position:relative;
      height: 50%;
+     border: 2px black solid;
 }
 
 /* HOVER EFFECT */
 
 .course-card:hover{
     transform:translateY(-10px) scale(1.03);
-    box-shadow:0 0 15px #e1f6ff;
+    box-shadow:5px 5px 5px #405862;
 }
 
 /* IMAGE */
@@ -63,7 +70,9 @@ html{
     padding:30px;
 
 }
-
+h2{
+    text-decoration: underline;
+}
 .course-content h2{
     margin-bottom:10px;
     color:rgb(75, 78, 14);
@@ -112,7 +121,7 @@ body{
 
 nav{
     width:100%;
-    padding:20px 8%;
+    padding:10px 3%;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -122,6 +131,27 @@ nav{
     background:brown;
     backdrop-filter:blur(10px);
     z-index:1000;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+
+    position: relative;
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #f0ff46;;
+    transition: 0.3s;
+}
+
+nav a:hover::after{
+    width: 100%;
 }
 
 .logo{
@@ -249,7 +279,7 @@ nav ul li a:hover{
             box-shadow:0px 10px 30px rgba(0,0,0,0.4);
             transition:0.5s;
             margin-bottom: -100px;
-            margin-top: 90px;
+            margin-top: -160px;
             
         }
 
@@ -344,8 +374,9 @@ nav ul li a:hover{
     text-align:center;
     color:rgb(0, 0, 0);
     font-size:45px;
-    margin-bottom:50px;
-    margin-top: -70px;
+    margin-bottom:60px;
+    margin-top: -180px;
+    font-size: 40px;
 }
 
 /* EVENT CONTAINER */
@@ -397,15 +428,6 @@ nav ul li a:hover{
     margin-bottom:20px;
 }
 
-.map-section h1{
-    color:rgb(0, 0, 0);
-    font-size:30px;
-    margin-bottom:20px;
-    margin-top: -50px;
-    margin-right:900px;
-    margin-left: 50px;
-
-}
 
 /* Map Container */
 
@@ -413,6 +435,7 @@ nav ul li a:hover{
     width:1390px;
     display:flex;
     justify-content:center;
+    
 }
 
 /* Map */
@@ -427,12 +450,16 @@ nav ul li a:hover{
     background: #051457;
     box-shadow:0px 10px 10px rgba(0,0,0,0.4);
 }
-
-.inquiry-box h2{
-    text-align:center;
-    margin-bottom:25px;
-    color:#1e3c72;
+.map-title{
+    margin-top: 10px;
+    margin-bottom: -20px;
+    color:black;
+    text-align: center;
+    font-size: 38px;
 }
+
+
+
 
 /* Form Fields */
 
@@ -442,6 +469,14 @@ form{
     gap:15px;
     margin-bottom: 100px;
     margin-top: 90px;
+}
+
+.inquiry-title{
+    margin-top: 50px;
+    text-align: center;
+font-size: 40px;
+margin-bottom: 25px;
+color: black;
 }
 
 input,
@@ -495,7 +530,7 @@ button:hover{
             color:rgb(0, 0, 0);
             font-size:25px;
             margin-bottom:80px;
-            margin-top: 40px;
+            margin-top: -70px;
         }
         
         
@@ -520,6 +555,7 @@ button:hover{
             box-shadow:5px 5px 5px rgba(0,0,0,0.3);
             width: 200px;
             height: 200px;
+            
         }
 
       
@@ -558,11 +594,14 @@ margin-top: -20px;
     flex-wrap:wrap;
     gap:30px;
     padding:50px 8%;
+    margin-top: -80px;
+
 }
 
 .footer-box{
     flex:1;
     min-width:220px;
+    
 }
 
 .footer-box h3{
@@ -614,7 +653,7 @@ margin-top: -20px;
 <nav>
 
 <div class="logo">
-ARENA ANIMATION,GTB NAGAR
+<img src ="images3/a56.png">
 </div>
 
 
@@ -639,22 +678,23 @@ ARENA ANIMATION,GTB NAGAR
 
     <div class="hero-text">
 
-        <h1>
+        <h5>
             Build Your
             <span>Future Skills</span>
-        </h1>
+        </h5>
 
         <p>
+        </br>
             Learn Web Development, Graphic Design,
             3D, VFX Animation and Professional Skills
             from industry experts.
         </p>
 
-        <a href="" class="hero-btn">
+        <a href="#Course" class="hero-btn">
             Explore Courses
         </a>
 
-        <a href="#" class="hero-btn hero-btn2">
+        <a href="#Contact" class="hero-btn hero-btn2">
             Join Now
         </a>
 
@@ -689,7 +729,7 @@ ARENA ANIMATION,GTB NAGAR
 
     <div class="course-card">
 
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+        <img src="images3/a57.jpg">
 
         <div class="course-content">
 
@@ -711,7 +751,7 @@ ARENA ANIMATION,GTB NAGAR
 
     <div class="course-card">
 
-        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6">
+        <img src="images3/a58.jpg">
 
         <div class="course-content">
 
@@ -731,11 +771,11 @@ ARENA ANIMATION,GTB NAGAR
 
     <div class="course-card">
 
-        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+        <img src="images3/a59.jpg">
 
         <div class="course-content">
 
-            <h2>Digital Marketing</h2>
+            <h2>VFX Animation</h2>
 
             <p>
                 Learn SEO, social media marketing and online branding.
@@ -969,8 +1009,7 @@ ARENA ANIMATION,GTB NAGAR
 <section class="map-section">
     
 </section>
-    
-    <h1>Our location in Google Map</h1>
+    <h1 class="map-title">Our location in Google Map</h1>
 
     <div class="map-container">
 
@@ -993,7 +1032,7 @@ ARENA ANIMATION,GTB NAGAR
 
  </section>
 
-    <h1>Inquiry Form</h1>
+   <h1 class="inquiry-title">Inquiry Form</h1>
 
             <input type="text" placeholder="Full Name" required>
 
