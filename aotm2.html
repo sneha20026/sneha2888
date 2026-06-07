@@ -271,7 +271,10 @@ nav ul li a:hover{
         /* About Box */
 
         .about-box{
-            width:900px;
+            max-width:900px;
+            width:100%;
+            max-width:900px;
+            margin:auto;
             background:white;
             border-radius:25px;
             overflow:hidden;
@@ -432,9 +435,11 @@ nav ul li a:hover{
 /* Map Container */
 
 .map-container{
-    width:1390px;
+    width:100%;
     display:flex;
     justify-content:center;
+    max-width:1390px;
+    margin:auto;
     
 }
 
@@ -537,11 +542,12 @@ button:hover{
         /* Grid Layout */
 
         .learn-container{
-            display:grid;
-
-            grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-
-            gap:30px;
+             display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    margin: auto;
+    margin-left: 33px;
+    
         }
 
         /* Cards */
@@ -595,7 +601,6 @@ margin-top: -20px;
     gap:30px;
     padding:50px 8%;
     margin-top: -80px;
-
 }
 
 .footer-box{
@@ -643,6 +648,198 @@ margin-top: -20px;
     font-size:14px;
     border-top:1px solid rgba(255,255,255,0.1);
 }
+@media (max-width:600px){
+
+    /* Navbar */
+
+    
+    nav{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    /* Hero Section */
+
+    .hero{
+        flex-direction:column;
+        padding:200px 20px;
+        text-align:center;
+    }
+
+    .hero-text,
+    .hero-image{
+        width:100%;
+        margin-top: 50px;
+    }
+
+    .hero-text h1{
+        font-size:35px;
+        line-height:45px;
+    }
+
+    h5{
+        font-size: 40px;
+    }
+
+    .hero-btn{
+      margin-bottom: 10px; 
+
+    }
+    /* Courses */
+
+    .course-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .course-card{
+        width:100%;
+        max-width:300px;
+    }
+
+    .course-title{
+        margin-top:-90px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* About Section */
+
+    .about-box{
+        flex-direction:column;
+        width:100%;
+        height:1050px;
+        box-shadow: 5px 5px 5px gray;
+    }
+
+    .about-image,
+    .about-content{
+        width:100%;
+
+    }
+    .about-section{
+        margin-top: 150px;
+    }
+    
+
+
+    /* Events */
+
+    .event-container{
+        flex-direction:column;
+        align-items:center;
+        margin-top: 30px;
+        
+    }
+
+    .event-title{
+        font-size: 30px;
+        margin-top: -50px;
+    }
+
+    .event-card{
+        width:100%;
+        max-width:600px;
+        height: 450px;
+        border: 1px black solid;
+        border-radius: 5px;
+    }
+
+    .learn-title{
+        font-size: 20px;
+    }
+
+    .learn-container{
+         display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap:30px;
+        justify-content: center;
+        margin-left: -3px;
+
+    }
+      .learn-box{
+        
+            width: 130px;
+            height: 130px;
+            padding:17px;
+            margin-top: 1px;
+        }
+     .learn-box h5{
+        font-size: 11px;
+        margin-top: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+
+     }   
+        
+           .box img{
+width:100px;
+object-fit:cover;
+margin-top: -20px;
+
+      
+}
+    }
+    /* Map */
+
+    .map-container{
+        width:330px;
+        height:400px;
+        flex-direction:column;
+    }
+
+    .map-title{
+        font-size: 25px;
+        margin-top: -100px;
+    }
+
+  .inquiry-title{
+    font-size: 30px;
+    margin-top: 90px;
+  }
+
+  form{
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  input,
+select,
+textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:12px;
+    margin-bottom: 2px;
+    
+}
+
+button{
+    padding: 10px;
+}
+textarea{
+    height:50px;
+}
+    /* Footer */
+
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+    }
+    .footer{
+        margin-top: 40px;
+    }
+
+
+
+
+
 
 
 </style>
@@ -802,7 +999,7 @@ margin-top: -20px;
 
             <div class="about-content">
 
-                <h1>About Us</h1>
+                <h1 class="about-title">About Us</h1>
 
                 <p>
                    Arena Animation is a premier creative media institute in North Delhi, offering industry-focused certificate and UG courses in Animation, VFX, Game Design, and UI/UX. 
@@ -1100,6 +1297,7 @@ margin-top: -20px;
 <div class="footer-bottom">
     <p>© 2026 Arena Animation Institute | All Rights Reserved</p>
 </div>
+
 
 </body>
 </html>
