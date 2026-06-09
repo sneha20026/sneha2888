@@ -160,6 +160,12 @@ nav a:hover::after{
     color:white;
 }
 
+.logo img{
+    width:130px;
+    height:70px;
+    margin-bottom: -8px;
+}
+
 nav ul{
     display:flex;
     list-style:none;
@@ -651,8 +657,13 @@ margin-top: -20px;
 @media (max-width:600px){
 
     /* Navbar */
+.logo img{
+    width: 90px;
+    height: 50px;
+    margin-bottom: 8px;
+}
 
-    
+
     nav{
         flex-direction:column;
         padding:15px;
@@ -836,14 +847,11 @@ textarea{
 
 
 
-
-
-
-
 </style>
 </head>
 <body>
 <!-- NAVBAR -->
+
 
 <nav>
 
@@ -904,6 +912,13 @@ textarea{
     </div>
 
 
+<!--Menu-->
+
+<input type="checkbox" id="menu">
+<label for="menu" class="menu-icon">
+    <i class="ri-menu-line"></i>
+</label>
+
 </section>
 
 
@@ -934,7 +949,7 @@ textarea{
                 Learn HTML, CSS, JavaScript and build modern responsive websites.
             </p>
 
-            <a href="" class="course-btn">Enroll Now</a>
+            <a href="#Contact" class="course-btn">Enroll Now</a>
 
         </div>
 
@@ -956,7 +971,7 @@ textarea{
                 Master Photoshop, Canva and creative designing techniques.
             </p>
 
-            <a href="#" class="course-btn">Enroll Now</a>
+            <a href="#Contact" class="course-btn">Enroll Now</a>
 
         </div>
 
@@ -976,7 +991,7 @@ textarea{
                 Learn SEO, social media marketing and online branding.
             </p>
 
-            <a href="#" class="course-btn">Enroll Now</a>
+            <a href="#Contact" class="course-btn">Enroll Now</a>
         
     </div>
 
