@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+:root
+{            --dark:rgb(0,0,0);
+            --light:white;
+            --tcolor:green;
+}
+  p{
+       font-size: 20px;
+       padding-right:10px;
+       padding-left: 10px;
+    }
+        body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbffca;
+}
+header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:40%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+
+}
+button{
+        padding: 6px 25px;
+        margin : 20px ;
+        margin-top: 5px;
+        font-size: 22px;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.50s;
+        border:2px solid black;
+        
+    }
+         button:hover{
+        transform: scale(1.1);
+        background: rgb(255, 193, 193);
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+        margin: 30px;
+    }
+  
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+   
+    </style>
+<header>
+LIGHT TO DARK THEME
+</header>
+<body>
+        <button id="b">🌙</button>
+        <script>
+            var b = document.getElementById("b")
+
+            b.onclick = function ()
+
+              {
+                if (b.innerHTML == "🌙")
+              {
+
+                 b.innerHTML = "🌞"
+                document.body.style.background="var(--dark)"
+                document.body.style.color="var(--light)"
+              }
+              else
+              {
+                b.innerHTML = "🌙"
+                document.body.style.background="var(--light)"
+                document.body.style.color="var(--dark)"
+              }
+
+                   document.title="No Error"
+
+        </script>
+
+        <h1>About the Beauty of Taj Mahal</h1>
+        <p>The Taj Mahal is a masterpiece of Mughal architecture, celebrated globally for its pristine white marble, flawless symmetry, and intricate gemstone inlay. Commissioned by Emperor Shah Jahan in 1632 in Agra, its legendary aesthetic shifts seamlessly depending on the time of day That said, the Taj is at its most alluring in the relative quiet of early morning, shrouded in mists and bathed with a soft red glow. As its vast marble surfaces fall into shadow or reflect the sun, its colour changes, from soft grey and yellow to pearly cream and dazzling white; it's well worth visiting at different times. This play of light is an important decorative device, symbolically implying the presence of Allah, who is never represented in anthropomorphic form.
+        The moods of the Taj vary from dawn to dusk. The Taj Mahal or the Crown of Palaces looks milky white in the soft light that characterizes early morning, while the afternoon sun makes it glisten bright and dazzling in the overhead sunlight, almost looking like a jewel against the opaque blue of the skyline and then comes a moonlit Taj breaking into the night sky, majestic and simply beautiful in a sense that cannot be put into words. It is at this time that it shines like a pearl.
+        A visitor to the monument may very well stand agape at this spectacle, the romanticism and sheer majesty of the structure unbelievably true. Its sensuous appeal was never more heightened as on a full moon night. The dome is what is highlighted, while the other aspects of the structure, though separated, each facet with its individuality intact, is nevertheless united in look, the balance is so perfect. The rows of cypress trees offset by the green carpet of grass complete the picture of idyllic proportions, resplendent in royal dignity.</p>
+
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 My Website</p>
+    <div class="footer-right">
+                <p>call us 011-555-8787</p>
+                <p>Email:sneharana0909@gmail.com</p>
+                <p>New delhi-Delhi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+            </div>
+        </footer>
+</html>
+
+
+</body>
+</html>
