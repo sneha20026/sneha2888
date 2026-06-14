@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbffca;
+}
+
+    header{
+        width:70%;
+        height:500px;
+        margin:auto;
+        box-shadow: 5px 5px 5px rgb(212, 175, 175);
+        border-radius: 10px;
+     
+
+    }
+    header img {
+        width:100%;
+        height:100%;
+        border-radius: 10px;
+    }
+
+h1{
+    text-align: center;
+    font-size:25px;
+text-transform:uppercase;
+font-family:Arial black;
+background:teal;
+color:white;
+box-sizing:border-box;
+border-radius: 15px;
+padding:10px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:30%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+   
+
+}
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top: 40px;
+}
+
+</style>
+
+<h1 id="m">Today is:-</h1>
+<header>
+    <img id ="pic" src="">
+</header>
+<body>
+
+    
+ <script>
+    var d = new Date();
+    var m = document.getElementById("m")
+    var pic= document.getElementById("pic")
+    pic.src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYWNoJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww" 
+      
+      var today = d.getday()
+
+      switch(today)
+      {
+
+        case 1:
+        m.innerHTML+=" Monday"
+        pic.src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJlYWNoJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww" 
+        break;
+      
+        case 2:
+        m.innerHTML+=" Tuesday"
+        img.src="https://plus.unsplash.com/premium_photo-1669377593274-41985c518d03?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3V0ZG9vcnxlbnwwfHwwfHx8MA%3D%3D" 
+        break;
+
+            case 3:
+        m.innerHTML+=" Wednesday"
+        img.src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW4lMjByYW5nZXxlbnwwfHwwfHx8MA%3D%3D" 
+        break;
+
+                  case 4:
+        m.innerHTML+=" Thursday"
+        img.src="https://images.unsplash.com/photo-1528907298109-e64971adc8e5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2lsZGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D" 
+        break;
+
+                  case 5:
+        m.innerHTML+="Friday"
+        img.src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhdHxlbnwwfHwwfHx8MA%3D%3D" 
+        break;
+
+                  case 6:
+        m.innerHTML+=" Saturday"
+        img.src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D" 
+        break;
+      
+                  case 0:
+        m.innerHTML+=" Sunday"
+        img.src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGFuZHNjYXBlfGVufDB8fDB8fHww" 
+        break;
+      }
+
+      document.title="Ready"
+ </script>   
+   <!-- Footer -->
+<footer>
+    <p>© 2026 My Website</p>
+    <div class="footer-right">
+                <p>call us 011-555-8787</p>
+                <p>Email:sneharana0909@gmail.com</p>
+                <p>New delhi-Delhi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+            </div>
+        </footer>
+</html>
+</footer>
+</body>
+</html>
