@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8fff5;
+}
+
+/* Header */
+header{
+     width:100%;
+    padding:15px 8%;
+    background:#2e7d32;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color: white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    position:relative;
+    display:inline-block;
+    padding-bottom:5px;
+    padding-top: 5px;
+}
+
+/* Underline Effect */
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:1px;
+    width:0%;
+    height:2px;
+    background:rgb(254, 247, 49);
+    transition:0.4s;
+}
+
+/* Hover Effect */
+nav ul li a:hover::after{
+    width:100%;
+}
+
+nav ul li a:hover{
+    color:rgb(254, 247, 49);
+}
+
+      /* KIDNEY SECTION */
+
+.kidney-section{
+    width:100%;
+    padding:55px 8%;
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    gap:50px;
+    background:#f5fff2;
+    align-items:center;
+}
+
+/* LEFT CONTENT */
+
+.kidney-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+
+}
+
+.kidney-content h2{
+    font-size:48px;
+    color:#1b5e20;
+    margin-bottom:20px;
+    
+}
+
+.kidney-content p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+/* FEATURES */
+
+.kidney-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-top:35px;
+}
+
+.feature-box{
+    background:white;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    color:#2e7d32;
+    font-weight:bold;
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-5px);
+}
+body{
+    margin:0;
+    overflow-x:hidden;
+}
+
+/* CONSULTATION BOX */
+
+.consultation-box{
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    position: sticky;
+    top: 100px;
+    box-sizing: border-box;
+}
+
+.consultation-box h3{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* FORM */
+
+.consultation-box form{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.consultation-box input,
+.consultation-box textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:0.3s;
+}
+
+/* FOCUS EFFECT */
+
+.consultation-box input:focus,
+.consultation-box textarea:focus{
+    border-color:#4caf50;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.4s;
+
+}
+
+.consultation-box button:hover{
+    background:#1b5e20;
+}
+
+
+
+/* MAIN BOX */
+
+.disease-detail-box{
+    background:white;
+    border-radius:30px;
+    padding:50px;
+    gap:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    width: 100%;
+    margin: auto;
+    margin-left:0px;
+}
+
+/* LEFT CONTENT */
+
+.disease-detail-content h4{
+    color:#4caf50;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.disease-detail-content h2{
+    font-size:35px;
+    color:#1b5e20;
+    margin-bottom:25px;
+}
+
+.disease-detail-content p{
+    color:#000000;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+h3{
+    font-size: 25px;
+     color:#1b5e20;
+     text-decoration: underline;
+}
+
+ul{
+   color: #000000;
+}
+li{
+    color:#000000;
+}
+h1{
+    font-size:25px;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+h6{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.small-img{
+    width: 700px;
+    height:350px;
+}
+
+.big-image{
+    width: 420px;
+    height:380px;
+}
+
+.kidney-img{
+    width:550px;
+    height:350px;
+    margin: auto;
+}
+
+.pic{
+    width:380px;
+    height:300px;
+}
+
+h7
+{
+    font-weight: bold;
+
+}
+h8{
+     font-size: 30px;
+     color: #4caf50;
+     font-weight:bold;
+
+}
+.img{
+    width: 400px;
+    height: 400px;
+}
+
+@media (max-width:600px){
+
+    
+
+    *{
+    outline:1px solid red;
+}
+ /* Header */
+    header{
+        flex-direction:column;
+        padding:15px;
+    }
+
+    .logo{
+        font-size:22px;
+        margin-bottom:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px 10px;
+    }
+
+       /* Consultation Form */
+    .consultation-box{
+        order: -1;
+        width:80%;
+        margin-left:0;
+        padding:25px;
+        position:relative;
+        top:0;
+        margin-top: 50px;
+
+    }
+
+    .consultation-box h3{
+        font-size:20px;
+    }
+
+    .consultation-box input,
+.consultation-box textarea{
+        width:100%;
+    padding:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    font-size:12px;
+    transition:0.3s;
+}
+
+/* BUTTON */
+
+.consultation-box button{
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:20px;
+    font-size:12px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+
+    body{
+   margin:0;
+    overflow-x:hidden;
+}
+
+
+    /* Kidney Section */
+
+        .kidney-section{
+        display:flex;
+        flex-direction:column;
+        padding:100px 15px 30px;
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .kidney-features{
+        grid-template-columns:1fr;
+    }
+
+    .consultation-box{
+        width:100%;
+        padding:20px;
+        position:relative;
+        top:0;
+        margin:0;
+    }
+  
+    .kidney-content h2{
+        font-size:14px;
+    }
+
+    .kidney-content p{
+        font-size:8px;
+    }
+
+    /* Feature Boxes */
+    .kidney-features{
+        grid-template-columns:1fr;
+    }
+
+    /* Disease Detail Box */
+    .disease-detail-box{
+        width:78%;
+        margin-left:0;
+        padding:25px;
+    }
+
+    .disease-detail-content h2{
+        font-size:20px;
+    }
+
+    .disease-detail-content p{
+        font-size:20px;
+    }
+
+    
+
+    /* Images */
+    .small-img,
+    .big-image,
+    .kidney-img,
+    .pic,
+    .img{
+        width:100%;
+        height:auto;
+    }
+
+    /* Headings */
+    h1{
+        font-size:22px;
+    }
+
+    h3{
+        font-size:22px;
+    }
+
+    h6{
+        font-size:18px;
+    }
+
+    h8{
+        font-size:24px;
+    }
+
+    /* Lists */
+    ul{
+        padding-left:20px;
+    }
+
+}
+
+
+
+    </style>
+<body>
+
+    <header>
+    <div class="logo">Pragati Ayurveda</div>
+
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#disease">Diseases</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- KIDNEY DISEASE DETAILS SECTION -->
+
+<section class="kidney-section">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="kidney-content">
+
+        <h2>Ayurvedic Treatment For Liver Disease</h2>
+
+        <p>
+In Ayurveda, liver disorders are mainly associated with an imbalance of Pitta Dosha and the accumulation of Ama (toxins) in the body. The liver is considered an important organ involved in digestion, metabolism, and blood purification. Ayurvedic treatment focuses on restoring the balance of doshas, improving digestion, detoxifying the body, and supporting liver function.
+        </p>
+
+        <p>
+            At Pragati Ayurveda, we provide pure homemade Ayurvedic
+            remedies prepared with natural herbs that support liver
+            health naturally and help improve overall wellness without
+            harmful chemicals.
+        </p>
+
+        <!-- FEATURES -->
+
+        <div class="kidney-features">
+
+            <div class="feature-box">
+                🌿 100% Herbal Ingredients
+            </div>
+
+            <div class="feature-box">
+                💚 Natural Detox Support
+            </div>
+
+            <div class="feature-box">
+                🧪 Traditional Ayurvedic Formula
+            </div>
+
+            <div class="feature-box">
+                🚚 Safe Home Delivery
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CONSULTATION FORM -->
+
+    <div class="consultation-box">
+
+        <h3>Book Consultation</h3>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="number" placeholder="Age" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <textarea rows="5" placeholder="Describe Your Problem"></textarea>
+
+            <button type="submit">Consult Now</button>
+
+        </form>
+
+    </div>
+<!-- DISEASE DETAIL BOX -->
+
+<section class="disease-detail-section">
+
+    <div class="disease-detail-box">
+
+        <!-- LEFT SIDE -->
+
+        <div class="disease-detail-content">
+
+            <h2>Know More About Liver Disease</h2></br>
+
+            <h8>What is liver Disease?</h8></br></br>
+
+
+            <p>
+             The liver is a vital organ that performs many important functions, including:
+            </p>
+            <ul>
+                <li>Filtering toxins from the blood</li></br>
+                    <li> Producing bile for digestion</li></br>
+                    <li> Storing vitamins and minerals</li></br>
+                      <li>Regulating blood sugar levels.</li></br>
+                        <li>Producing proteins necessary for blood clotting</li></br>
+</ul>
+
+
+            <p>
+       Liver disease refers to any condition that damages the liver or affects its ability to function properly.
+            </p>
+
+            <img src="https://images.openai.com/static-rsc-4/i1f5vnbikG6whTwaI7FvegBqalpkghjQWAEaCqzy_FcYRIT8jadN_RmnLt4LBnlhCQpTtcdJFzuD9IjivWCGtShjqaKYCKwO37hpe_qPJhwHqoUhjtg4M2coBrqpJuoz-RtJyOl4JsrFkt1IRO5e3aXUPlmaZUbCbE3RA0dzLoH_mpUzwNtZtBHBwjCqkguL?purpose=fullsize" alt="" class="img
+            ">
+
+
+            </br>  
+            </br> 
+            </br>
+
+              <h3>Types of Liver Disease</h3>
+              </br>
+        
+
+         <h1>1. Fatty Liver Disease</h1></br>
+                            <ul>
+                    <li>Fat accumulates in liver cells.</li></br>
+                    <li>Can be caused by obesity, diabetes, or alcohol consumption.</li></br>
+                      </ul>
+                      
+
+                      <h1>2. Hepatitis</h1></br>
+                        <ul>
+                    <li>Inflammation of the liver caused by viruses, alcohol, toxins, or autoimmune conditions.</li></br>
+                    <li>Types include Hepatitis A, B, C, D, and E.</li></br>
+                      </ul>
+    
+                      <h1>3. Liver Cirrhosis</h1></br>
+
+                       <ul>
+                    <li>Severe scarring of liver tissue.</li></br>
+                    <li>Often results from chronic hepatitis or long-term alcohol use.</li></br>
+                      </ul>
+                              
+                       <h1>4. Liver Cancer</h1></br>
+
+                       <ul>
+                    <li>Uncontrolled growth of abnormal cells in the liver.</li></br>
+                
+                      </ul>
+
+                                
+                       <h1>5. Acute Liver Failure</h1></br>
+
+                       <ul>
+                    <li>Sudden loss of liver function that requires immediate medical attention.</li></br></br>
+                
+                      </ul>
+
+                       <h8>What is Fatty Liver Disease?</h8></br></br>
+                               <p>
+        Fatty Liver Disease is a condition in which excess fat builds up in the liver cells. Normally, the liver contains a small amount of fat, but when fat makes up more than about 5–10% of the liver's weight, it is considered fatty liver disease.
+
+Fatty liver disease can range from simple fat accumulation to inflammation and liver damage, which may eventually lead to cirrhosis or liver failure if left untreated.
+            </p>
+           
+            <h3>Types of Fatty Liver Disease</h3></br>
+
+            
+         <h1>1. Non-Alcoholic Fatty Liver Disease (NAFLD)</h1></br>
+                            <ul>
+                    <li>Occurs in people who drink little or no alcohol.</li></br>
+                    <li>Commonly associated with obesity, diabetes, and high cholesterol.</li></br>
+                      </ul>
+
+                                  
+         <h1>2. Alcohol-Related Fatty Liver Disease</h1></br>
+                            <ul>
+                    <li>Caused by excessive alcohol consumption.</li></br>
+                    <li>Often improves if alcohol intake is stopped.</li></br>
+                      </ul>
+
+            
+                      
+            <img src="https://images.openai.com/static-rsc-4/crEoVA_MWDv6J8Ji4QrBExgdszoaVK4M6lUf9uxktvFWPeVLCXefqOn6qpvPAQBCj4T-Nx2BiZgP1QY4q8FBY4PhSTR1e0LrOcQM8Ce4WIhU5Vgx8jgwF6Niid3raR3SULhLarvA-QDhG6ZzpA09f9Bh57L4SXbxIXvfKuDIzbwHWZ-H8fiAV2J3vq74QRM8?purpose=fullsize" alt="" class="img">
+                   
+            
+
+            <h3>Common Symptoms of Liver Disease</h3>
+             </br>       
+             <p>
+          Liver disease can develop gradually, and symptoms may not appear until significant liver damage has occurred. Common symptoms include:
+            </p>
+            
+
+            <img src="https://images.openai.com/static-rsc-4/sZPPKQ_88OYMHlheiGAxQSGMby9fBLjm087zwK5KvIRdgNzIAaI3WGwejzXCk2QAm5qgWu4q0yAmtwCjdsVwQ8LjO5NAoLEd030POihylparcHgSLbK3TBHs73MiTcXO7KUKoQ0orlsFH_krKzxDJOldcuM9M547p_Sg3QgFq1Y?purpose=inline" class="small-img"></br></br>
+            
+                      </br>
+                      <ul>
+                    <li>Fatigue and weakness</li></br>
+                    <li>Loss of appetite</li></br>
+                    <li>Nausea and vomiting</li></br>
+                      <li>Abdominal pain</li></br>
+                      <li>Yellowing of the skin and eyes (jaundice)</li></br>
+                      <li>Dark-colored urine</li></br>
+                      <li>Pale stools</li></br>
+                      <li>Swelling in the legs and abdomen</li></br>
+
+                      </ul>
+
+                  
+            
+                 <h3>The Ayurvedic Correlation: Yakrit Roga & Meda Dhatu Imbalance</h3></br> 
+                 
+                  <h6>Yakrit Roga (Liver Disorders)</h6></br>
+                    <p>
+                   In Ayurveda, the liver is known as Yakrit. Diseases affecting the liver are collectively referred to as Yakrit Roga. The liver plays a vital role in digestion, metabolism, blood formation, and detoxification. Any disturbance in these functions can lead to liver disorders.
+
+Ayurvedic texts associate liver diseases primarily with an aggravation of Pitta Dosha, especially when digestive fire (Agni) becomes impaired and toxins (Ama) accumulate in the body.
+
+               </p>    
+       
+                <ul>
+                    <li><h7>Meda Dhatu Imbalance:</h7> When Meda Dhatu becomes excessive or improperly metabolized due to poor digestion and lifestyle habits, fat accumulates in different tissues, including the liver. This condition closely resembles modern Fatty Liver Disease.</li></br>
+                    <li><h7>Ama Pachana (Removal of Toxins):</h7> Ama Pachana is an important Ayurvedic treatment principle that refers to the digestion, neutralization, and elimination of Ama (toxins) from the body. According to Ayurveda, Ama is formed when food is not properly digested due to weak digestive fire (Agni).</li></br>
+                    <li><h7>Mandagni:</h7> Mandagni is an Ayurvedic term that means weak or sluggish digestive fire.
+
+In Ayurveda, Agni (digestive fire) is responsible for digesting food, absorbing nutrients, and maintaining metabolism. When Agni becomes weak, it is called Mandagni.</li></br></br>
+                    
+                        
+                       <h2>Signature Holistic Protocol to Heal Your Liver</h2></br>
+                           <p>
+               A holistic liver-healing protocol focuses on supporting the liver's natural ability to repair and regenerate through a combination of diet, lifestyle modifications, stress management, exercise, and appropriate Ayurvedic or medical guidance. The goal is to reduce inflammation, improve metabolism, eliminate toxins, and promote overall well-being.
+               </p>   
+
+            <h1>1. Optimize Digestion and Metabolism (Agni Deepana)</h1></br><p>According to Ayurveda, healthy digestion (Agni) is the foundation of health.</p>
+                 <h6>Recommendations:</h6></br>
+
+                </ul>
+                    <li>Eat meals at regular times.</li></br>
+                    <li>Prefer freshly cooked, warm foods.</li></br>
+                    <li>Avoid overeating.</li></br>
+                      <li>Chew food thoroughly.</li></br>
+                      <li>Drink adequate water throughout the day.</li></br>
+                     
+                    </ul>
+
+                     <h6>Benefits:</h6></br>
+
+                </ul>
+                    <li>Improves nutrient absorption.</li></br>
+                    <li>Reduces toxin (Ama) formation.</li></br>
+                    <li>Supports healthy liver metabolism.</li></br>
+                    
+                    </ul>
+                    
+
+  <h1>2. Follow a Liver-Friendly Diet</h1></br>
+                 <h6>Include</h6></br>
+
+                </ul>
+                    <li>Green leafy vegetables</li></br>
+                    <li>Moong dal</li></br>
+                    <li>Bottle gourd and pumpkin</li></br>
+                      <li>Beetroot and carrots</li></br>
+                      <li>Coconut water</li></br>
+                     
+                    </ul>
+
+                             <h6>Avoid:</h6></br>
+
+                </ul>
+                    <li>Fried foods</li></br>
+                    <li>Processed foods</li></br>
+                    <li>Sugary beverages</li></br>
+                    
+                    </ul>
+           
+  <h1>3. Maintain a Healthy Weight</h1></br>
+                 <h6>Stratagies</h6></br>
+
+                </ul>
+                    <li>Regular physical activity</li></br>
+                    <li>Avoid crash diets</li></br>
+                    <li>Portion control</li></br>
+                      <li>Balanced calorie intake</li></br>
+                    
+                     
+                    </ul>
+
+                             <h6>Benefits:</h6></br>
+
+                </ul>
+                    <li>Reduces fat accumulation in the liver.</li></br>
+                    <li>Improves insulin sensitivity.</li></br>
+            
+                    
+                    </ul>
+
+
+                  <h1>4. Support Liver Health with Ayurvedic Herbs</h1></br>
+                 <h6>Stratagies</h6></br>
+
+                </ul>
+                    <li>Bhumi Amla</li></br>
+                    <li>Guduchi</li></br>
+                    <li>Punarnava</li></br>
+                      <li>Kalmegh</li></br>
+                    
+                     
+                    </ul>
+
+                  
+     <h3>Conclusion</h3></br>
+
+
+                             <p>
+     A signature holistic protocol for liver health combines balanced nutrition, regular exercise, stress management, quality sleep, toxin avoidance, and appropriate Ayurvedic support. By addressing the root causes of liver dysfunction and promoting healthy digestion and metabolism, this integrated approach can help support liver function, especially in conditions such as Fatty Liver Disease. However, people with significant liver disease should continue to work with qualified healthcare professionals for diagnosis, monitoring, and treatment. </br></br>
+
+       Our dedicated team of Ayurvedic practitioners will provide their best efforts in guiding you towards better health and well-being using the principles of Ayurveda
+               </p>
+
+
+                    <h2>Why Choose Pragati Ayurveda?</h2>
+
+                                <p>
+       At Pargati Ayurveda, we blend ancient Ayurvedic principles with personalized, natural treatments. Our expert practitioners design tailored care plans to address your specific needs, using pure herbal remedies and lifestyle adjustments. We focus on restoring balance and preventing future issues, always prioritizing your overall well-being and satisfaction. Experience effective and compassionate care with Aksa Ayurveda.
+               </p> 
+
+                    <ul>
+                    <li><h7>Ongoing Support:</h7>We are here for you every step of the way, providing guidance and support during your treatment.</li></br></br>
+                    <li><h7>Skilled Doctors:</h7>Our team includes experienced Ayurvedic doctors who are skilled in effectively treating disorders with a holistic approach.</li></br></br>
+                    <li><h7>Best Treatments:</h7> We create customized treatment plans that fit your specific health needs.</li></br></br>
+                     <li><h7>Natural Ingredients:</h7>Our remedies use safe and natural herbs, ensuring you receive gentle yet effective care.</li></br></br>
+                     <li><h7>Complete Care:</h7>We focus on your overall health, not just the Heart issues, to help you feel your best.</li></br></br>
+                      </ul>
+    
+</section>
+
+
+
+</body>
+</html>
