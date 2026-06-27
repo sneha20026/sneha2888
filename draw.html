@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #fbffca;
+    }
+
+    header
+    {
+        font-size: 25px;
+        text-transform: uppercase;
+        font-family: Arial black;
+        background: teal;
+        color: white;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+        box-shadow:5px 5px 5px rgb(136, 207, 162);
+        width:60%;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+</style>
+    <header>
+    Press r and the help of mouse movement
+</header>
+<body>
+
+    <canvas id ="mycan" style="background:#fbffca" width="600" height="600"></canvas>
+
+    <script>
+        var c = document.getElementById("mycan");
+        var k;
+        var d = c.getContext("2d");
+        c.width = window.innerWidth ;
+        c.height = window.innerHeight;
+        var red ,green ,blue,drawcolor
+
+
+        function f1(event)
+        {
+            k = event.key
+            switch(k)
+            {
+                case "r":
+                    if(r=100)
+                    {
+                        r=r+1
+                          document.title = r
+                    }
+                     break;
+                     case "t":
+                        if(r>10)
+                    {
+                        r=r-1
+                          document.title = r
+
+                    }
+                    break;
+
+
+                    case " ":
+                        d.clearRect(0,0,window.innerWidth,window.innerHeight)
+                        break;
+
+
+            }
+        }
+
+
+        function draw(event)
+        {
+            var x = event.pageX
+            var y = event.pageY
+              red = Math.round(Math.random()*255)
+               green = Math.round(Math.random()*255)
+                blue = Math.round(Math.random()*255)
+                drawcolor = "rgb("+red+","+green+","+blue+")"
+
+
+                d.beginPath();
+
+                d.arc(x,y, r ,0, 2 * Math.PI);
+                d.fillStyle = drawcolor
+                d.fill()
+                d.stroke();
+
+        }
+
+        document.addEventListener("keydown",f1)
+        document.addEventListener("mousemove",draw)
+    </script> 
+</body>
+</html>
