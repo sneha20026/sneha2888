@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
 <title>My Website</title>
 <link rel="stylesheet" href="profile.css">
 
@@ -21,7 +22,7 @@ nav{
     padding:15px 50px;
     background:#111;
     color:white;
-    
+    font-size: 18px ;
 }
 
 nav ul{
@@ -69,37 +70,15 @@ nav a{
     border-radius:5px;
 }
 
-/* Dropdown */
-.dropdown{
-    display:none;
-    position:absolute;
-    top:35px;
-    left:0;
-    background:#222;
-    width:180px;
-    border-radius:10px;
-    overflow:hidden;
-}
-
-/* Dropdown Links */
-.dropdown a{
-    display:block;
-    padding:12px;
-    color:white;
-    border-bottom:1px solid #333;
-}
-
-.dropdown a:hover{
-    background:cyan;
-    color:black;
-}
 
 /* Section */
 .section{
     padding:60px;
     text-align:center;
 }
-
+.logo{
+    font-size: 25px;
+}
 
 /* Footer */
 footer{
@@ -108,8 +87,131 @@ footer{
     text-align:center;
     padding:20px;
 }
+.menu-icon{
+    display: none;
+}
 
+      input[type="checkbox"]{
+        display: none;
+    }
+
+@media (max-width:600px){
+
+
+.menu-icon{
+display:block;  
+font-size:25px;
+cursor:pointer;
+margin-left: auto;
+}
+
+.nav-links{
+display:none;
+flex-direction:column;
+position:absolute;
+top:52px;
+left:0;
+width:100%;
+background:#000000;
+color: white;
+text-align:center;
+}
+
+
+#menu-toggle:checked ~ .nav-links{
+display:flex;
+
+}
+
+.nav-links li{
+padding:15px 0;
+}
+
+.logo{
+    margin-right: auto;
+    font-size: 20px;
+position: relative;
+top: 30px;
+padding: 6px;
+}
+nav{
+        flex-direction:column;
+        padding:2px;
+        text-align:center;
+      
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:12px;
+        padding:0;
+        margin-top:15px;
+    }
+
+    /* Hero Section */
+    .hero{
+        height:80vh;
+        flex-direction:column-reverse;
+        padding:20px 20px;
+        text-align:center;
+        color: #7e1733;
+        background: #f4ff8e;
+        
+    }
+
+
+    .text{
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:20px;
+        line-height:1.4;
+        margin-top: 40px;
+    }
+
+    .hero p{
+        font-size:15px;
+        margin-top:20px;
+    }
+
+    .btn{
+        display:inline-block;
+        margin-top:30px;
+        background: #1f1e1e;
+        color: white;
+    }
+
+    /* Profile Image */
+    .profile{
+        margin-bottom:10px;
+    }
+
+    .profile img{
+        width:220px;
+        height:220px;
+        border-radius:50%;
+        object-fit:cover;
+        margin-top: -40px;
+    }
+
+    /* Section */
+    .section{
+        padding:30px 20px;
+    }
+
+    /* Footer */
+    footer{
+        padding:10px;
+        text-align:center;
+        margin-top: -30px;
+    }
+
+    .footer-right p{
+        padding: 1px;
+    }
     
+}
 </style>
 </head>
 
@@ -120,12 +222,18 @@ footer{
 
 <!-- Navbar -->
 <nav>
-    <h2>SNEHA</h2>
-    <ul>
+ <div class="logo">SNEHA</div>
+  <input type="checkbox" id="menu-toggle">
+
+  <label for="menu-toggle" class="menu-icon">
+    <i class="ri-menu-line"></i>
+  </label>
+
+  <ul class="nav-links">
         <li><a href="index.html">Home</a></li>       
         <li><a href="#">About</a></li>
         <li><a href="aotm2.html">Project</a></li>
-      <li><a href="practice.html">Practice pages </a>
+      <li><a href="practice.html">Practice pages </a></li>
 
 
 

@@ -20,6 +20,7 @@ text-align:center;
 padding:25px;
 font-size:30px;
 letter-spacing:2px;
+
  }
 
 .container{
@@ -99,9 +100,69 @@ text-align:center;
 padding:25px;
 font-size:30px;
 letter-spacing:2px;
-width: 1500px;
+width: 100%;
  
+}
+
+@media (max-width:768px){
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+    header{
+        font-size:24px;
+        padding:18px;
+        letter-spacing:1px;
     }
+
+    .container{
+        flex-direction:column;
+        align-items:center;
+        padding:30px;
+        gap:20px;
+    }
+
+    .card{
+        width:90%;
+        max-width:350px;
+    }
+
+    .card img{
+        height:200px;
+    }
+
+    .card-content h3{
+        font-size:20px;
+    }
+
+    .card-content p{
+        font-size:15px;
+    }
+
+    .btn{
+        padding:10px 20px;
+        font-size:15px;
+    }
+
+    .main-header{
+        padding:15px;
+        font-size:22px;
+    }
+
+    .same-header{
+        width :100%;
+        font-size:22px;
+        padding:18px;
+        box-sizing:border-box;
+    }
+
+    .box{
+        width: 100%;
+        margin:20px 0;
+        padding:0;
+    }
+
+}
 
 
 
@@ -280,8 +341,10 @@ HTML PRACTICE WORK
 </div>
 
 
-<div class="box">
+    <div class="box">
+
     <h2 class="same-header">JAVA SCRIPT PRACTICE WORK</h2>
+   
 </div>
 
 <div class="card">
