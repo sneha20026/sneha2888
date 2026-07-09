@@ -89,7 +89,7 @@ footer{
 <body>
 
     <header>
-DRAW RANDOM COLOURFUL CIRCLES
+DRAW RANDOM COLORFUL RECTANGLES
 </header>
 
 
@@ -102,10 +102,10 @@ DRAW RANDOM COLOURFUL CIRCLES
 <div class="instructions">
     <h3>Instructions</h3>
     <ul>
-        <li>Press 'r' Key for Increase the size of circles.</li>
-        <li>Press 't' Key for decrease the size of circles.</li>
+        <li>Press 'r' Key for Increase the size of rectangles.</li>
+        <li>Press 't' Key for decrease the size of rectangles.</li>
         <li>Press 's' Key for clear the Canvas.</li>
-        <li>Draw the Circles for mouse move. </li>
+        <li>Draw the Rectangles for mouse move. </li>
         <li>Start and Stop for mouse left click.</li>
     </ul>
 </div>
@@ -163,7 +163,7 @@ DRAW RANDOM COLOURFUL CIRCLES
     var y = event.pageY;
 
     d.beginPath();
-    d.arc(x,y,r,0,2*Math.PI);
+     d.rect(x,y,r,r);
 
     d.fillStyle = picker.value;
 
