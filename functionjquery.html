@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery function</title>
+    
+</head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+<style>
+
+    body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbffca;
+}
+
+img{
+    width:400px;
+    height: 380px;
+    position: relative;
+    left: 565px;
+    border-radius: 10px;
+       transition:.5s;
+       cursor: pointer;
+}
+
+
+header
+{
+font-size:30px;
+text-transform:uppercase;
+font-family:Arial black;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:50%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+
+}
+#my{
+text-align: center;
+font-size: 25px;
+box-sizing: border-box;
+background: #e72344;
+color: #ffffff;
+width: 20%;
+margin: auto;
+border-radius: 4px;
+font-family: serif;
+}
+h2{
+    text-align: center;
+font-size: 26px;
+text-decoration: underline;
+}
+
+#b1{
+    border-radius: 5px;
+       display: block;
+    margin: 20px auto;
+    padding: 8px 15px;
+    font-size: 20px;
+    background: #67390a;
+    color: white;
+    border:none;
+    cursor: pointer;
+    transition: 2s;
+}
+.text{
+    font-size: 20px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: rgb(31, 64, 22);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 8px gainsboro;
+    margin: 30px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
+<header>
+Selector event Function in jQuery
+</header>  
+
+
+<body>
+<img src="https://i.pinimg.com/control1/736x/74/e8/55/74e855ad3c8e3db8ba4a157ec9b2c518.jpg">
+
+<button id = "b1" >hide button</button>
+<h1 id = "my">About National Bird</h1>
+<h2>Peacock</h2>
+<p class="text">
+    The peacock is the national bird of India and is known for its beauty, grace, and colorful feathers. Its scientific name is Pavo cristatus, and it belongs to the pheasant family. The male peacock has bright blue and green feathers with a long, beautiful tail covered in eye-shaped patterns. During the rainy season, it spreads its feathers and performs a graceful dance to attract the female, called a peahen. Peacocks are commonly found in forests, villages, and farmlands across India. They mainly eat grains, seeds, insects, fruits, and small reptiles. The peacock symbolizes beauty, pride, and elegance and holds great cultural and religious importance in India. It was declared the national bird of India in 1963 because of its rich cultural significance and widespread presence. Protecting peacocks and their natural habitats is important for maintaining India's wildlife and biodiversity.The peacock is protected under the Wildlife Protection Act, and hunting it is strictly prohibited. We should protect peacocks, conserve their natural habitats, and spread awareness about wildlife conservation so that this magnificent bird continues to thrive for future generations.
+</p>
+
+<script>
+   $(document).ready(function()
+{
+    $("#b1").click(function(){
+        $("#my").toggle("fast")
+    })
+
+
+     $(".text").mouseover(function()
+     {
+        $(this).css({"transition":"4s","color":"rgb(21, 35, 71)","background":"rgb(117, 244, 86)"})
+     })
+  })
+
+
+  $(".text").mouseout(function(){
+    $(this).css({
+        "transition":"2s",
+        "color":"white",
+        "background":" rgb(31, 64, 22)",
+        
+        
+    });
+});
+    
+
+</script>
+
+ <!-- Footer -->
+
+        <footer>
+        <div id="footer"> ©2026 My Work | All Rights Reserved</div>
+
+    </footer>
+</body>
+</html>
