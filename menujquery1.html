@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pull Down Menu</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<style>
+
+ header
+{
+font-size:30px;
+font-family: sans-serif;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:35%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+border-radius: 3px;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fbffca;
+}
+
+.menu{
+width:320px;
+margin:40px auto;
+background:rgb(247, 114, 114);
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 5px rgba(0,0,0,.2);
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.menu h3{
+background:rgb(247, 114, 114);
+color:#332967;
+padding:15px;
+cursor:pointer;
+transition:.3s;
+}
+
+.menu h3:hover{
+background:#df344dbc;
+}
+
+.menu ul{
+display:none;
+list-style:none;
+background:
+#7f23e8;
+}
+
+.menu ul li a{
+display:block;
+padding:14px;
+text-decoration:none;
+color:#f5f1f1;
+transition:.3s;
+}
+
+.menu ul li a:hover{
+background:#a87bfc;
+
+color:#62512a;
+padding-left:25px;
+}
+
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    PULL DOWN MENU (jQuery)
+</header>
+
+
+<div class="menu">
+
+<h3 id="main">Main</h3>
+
+<ul id="mainMenu">
+     <li><a href="index.html">Profile</a></li>
+    <li><a href="practice.html">Practice</a></li>
+    <li><a href="aotm2.html">Project</a></li>
+     <li><a href="https://www.behance.net/sneharana15">Behance</a></li>
+</ul>
+
+<h3 id="project">Projects</h3>
+
+<ul id="projectMenu">
+   <li><a href="practice.html">HTML</a></li>
+    <li><a href="practice.html">JAVASCRIPT</a></li>
+    <li><a href="practice.html">jQuery</a></li>
+
+</ul>
+
+<h3 id="social">Social Media</h3>
+
+<ul id="socialMenu">
+  <li><a href="https://www.youtube.com">YouTube</a></li>
+    <li><a href="https://www.instagram.com">Instagram</a></li>
+    <li><a href="https://www.facebook.com">Facebook</a></li>
+
+</ul>
+
+</div>
+
+<script>
+
+$(document).ready(function(){
+
+$("#main").click(function(){
+
+$("#mainMenu").slideToggle(400);
+
+});
+
+$("#project").click(function(){
+
+$("#projectMenu").slideToggle(400);
+
+});
+
+$("#social").click(function(){
+
+$("#socialMenu").slideToggle(400);
+
+});
+
+});
+
+</script>
+
+       <footer>
+        <div id="footer"> ©2026 My Work | All Rights Reserved</div>
+
+    </footer>
+
+</body>
+</html>
