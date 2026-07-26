@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+</head>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+ <style>
+    
+ header
+{
+font-size:30px;
+font-family: sans-serif;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:35%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+border-radius: 3px;
+
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fbffca;
+}
+
+
+#aboutsub
+{
+    margin: auto;
+    width: 60%;
+}
+
+img{
+    width: 35%;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+    left: 300px;
+    box-shadow: 5px 5px 5px rgb(251, 194, 194);
+}
+
+h1{
+    background: rgb(118, 26, 41);
+    color: white;
+    padding: 10px;
+    box-shadow: 2px 3px 5px rgb(106, 18, 18);
+    width: 60%;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+
+}
+
+
+
+.p2{
+    height: 350px;
+  position: relative;
+  left: 500px;
+}
+
+.p3{
+    height: 400px;
+  position: relative;
+  width: 400px;
+  left: 550px;
+}
+
+.p4{
+    height: 500px;
+  position: relative;
+  left: 550px;
+  width: 400px;
+}
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top: 50px;
+}
+
+ </style>
+<body>
+
+    <header>
+        ACCORDION SECTIONS
+    </header>
+    
+<div id = "about">
+    <h1 id ="col1">National bird</h1>
+    <div id ="aboutsub">
+       <img src="https://i.pinimg.com/control1/1200x/9b/2c/f5/9b2cf5bed6e07dedf4ccda557346372e.jpg">
+    </div>
+
+    <div id = "Product">
+    <h1 id ="col2">National Animal</h1>
+    <div id ="productsub">
+        <img src = "https://i.pinimg.com/736x/55/6a/d6/556ad6ca83213b3cea7c5928942bc6da.jpg" class ="p2">
+    </div>
+
+        <div id = "Services">
+    <h1 id ="col3">National amblem </h1>
+    <div id ="servicessub">
+    <img src = "https://i.pinimg.com/1200x/36/e3/c2/36e3c286ef8cebb8aa549319d1d0d145.jpg" class = "p3">
+          
+    </div>
+    
+
+         <div id = "Data">
+    <h1 id ="col4">National Flower</h1>
+    <div id ="datasub">
+      <img src = "https://i.pinimg.com/control1/1200x/7e/63/78/7e637857da8df893c8fafefba02c45af.jpg" class = "p4">
+    </div>
+</div>
+</div>
+
+
+<script>
+    $("#aboutsub").hide()
+      $("#productsub").hide()
+        $("#servicessub").hide()
+          $("#datasub").hide()
+
+          $(document).ready(function()
+
+          {
+             $("#aboutsub").slideUp(500)
+      $("#productsub").slideUp(500)
+        $("#servicessub").slideUp(500)
+          $("#datasub").slideUp(500)
+
+
+
+            $("#col1").click(function()
+            {
+
+
+                $("#productsub").slideUp(500)
+                   $("#servicessub").slideUp(500)
+                      $("#datasub").slideUp(500)
+
+                       $("#aboutsub").slideToggle(500)
+                    
+
+          })
+
+
+          
+            $("#col2").click(function()
+            {
+
+
+                $("#aboutsub").slideUp(500)
+                   $("#servicessub").slideUp(500)
+                      $("#datasub").slideUp(500)
+
+                       $("#productsub").slideToggle(500)
+        
+
+          })
+
+                 $("#col3").click(function()
+            {
+
+
+                $("#aboutsub").slideUp(500)
+                   $("#productsub").slideUp(500)
+                      $("#datasub").slideUp(500)
+
+                       $("#servicessub").slideToggle(500)
+
+
+          })
+
+                       $("#col4").click(function()
+            {
+
+
+                $("#aboutsub").slideUp(500)
+                   $("#productsub").slideUp(500)
+                      $("#servicessub").slideUp(500)
+
+                       $("#datasub").slideToggle(500)
+                    
+
+          })
+
+        })
+
+</script>
+
+ <!-- Footer -->
+
+        <footer>
+        <div id="footer"> ©2026 My Work | All Rights Reserved</div>
+
+    </footer>
+</body>
+</html>
