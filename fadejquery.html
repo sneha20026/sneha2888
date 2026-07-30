@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Fade Functions</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body{
+            font-family:Arial;
+            text-align:center;
+             background-color: #fbffca;
+        }
+
+        
+    header
+{
+font-size:30px;
+font-family: sans-serif;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:35%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+border-radius: 3px;
+
+}
+button{
+        padding: 3px 20px;
+        margin: 3px;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.50s;
+        border:2px solid black;
+        
+        
+    }
+         button:hover{
+        transform: scale(1.0);
+        background: rgb(255, 193, 193);
+    }
+
+
+#p1{
+    width: 400px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 3px rgb(90, 21, 77);
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top: 25px;
+}
+    </style>
+    <header>
+FADE FUNCTIONS (jQuery)
+</header>  
+
+</head>
+
+<body>
+
+<button id="fadein">Fade In</button>
+<button id="fadeout">Fade Out</button>
+<button id="fadeto">Opacity (20%)</button>
+
+ <div class="container">
+
+ </div>
+
+      <img id="p1"
+        src="https://i.pinimg.com/736x/25/66/91/256691b9ac2a70d8483d0ffdecf0a44a.jpg">
+
+<script>
+$(document).ready(function(){
+
+
+    // Fade In
+    $("#fadein").click(function(){
+        $("#p1").fadeIn(1000);
+    });
+
+    // Fade Out
+    $("#fadeout").click(function(){
+        $("#p1").fadeOut(1000);
+    });
+
+    // Fade To
+    $("#fadeto").click(function(){
+        $("#p1").fadeTo(1000,0.5);
+    });
+
+});
+</script>
+
+
+ <!-- Footer -->
+
+        <footer>
+        <div id="footer"> ©2026 My Work | All Rights Reserved</div>
+
+    </footer>
+
+</body>
+</html>
