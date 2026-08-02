@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>fold demo</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css">
+  <style>
+ 
+  body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbffca;
+}
+
+
+  header
+{
+font-size:32px;
+font-family: sans-serif;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:35%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+
+}
+
+
+.pic img{
+    width: 500px;
+    margin-left: 510px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 4px rgb(251, 141, 141);
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top: 55px;
+}
+
+</style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+</head>
+<body>
+ 
+<header>
+FOLD FUNCTION
+</header>
+
+<div id="pic1" class="pic">
+    <img src = "https://i.pinimg.com/1200x/58/16/43/581643022f922532359a0c20ff5c84b8.jpg">
+</div>
+ 
+<script>
+$( document ).click(function() {
+   $("#pic1").toggle("fold", 2000);
+});
+</script>
+
+ <!-- Footer -->
+
+        <footer>
+        <div id="footer"> ©2026 My Work | All Rights Reserved</div>
+
+    </footer>
+ 
+</body>
+</html>
