@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Animation</title>
+</head>
+
+<header>
+    INTRO ANIMATION IN jQUERY
+</header>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+  <style>
+
+        body{
+    padding: 0;
+    margin: 0;
+    background-color: #ffe9ca;
+
+}
+
+
+    header
+{
+font-size:30px;
+font-family: sans-serif;
+background:teal;
+color:white;
+text-align:center;
+box-sizing:border-box;
+padding:20px;
+box-shadow:5px 5px 5px rgb(136, 207, 162);
+width:35%;
+margin:auto;
+margin-bottom:50px;
+margin-top:20px;
+border-radius: 3px;
+
+}
+#logo{
+    width: 200px;
+    height: 20px;
+    background: purple;
+    box-shadow: 5px 5px 5px gray;
+    color: white;
+    position: absolute;
+    left:-500px;
+    top: 0px;
+    text-align: center;
+    padding: 20px;
+    font-family: arial black;
+}
+
+  </style>
+<body>
+
+        <div id = "logo">
+            SUMMER SALE
+        </div>
+        
+
+
+<script> 
+var box = document.getElementById("logo")
+
+    $(document).ready(function()
+{
+        $("#logo").animate({left:"200px"},5000).delay(500).animate({top:"120px",borderRadius:"40px"},1000,changecolor)
+    
+  $("#logo").animate({fontSize:"+=10",width:"+=100",height:"+=10px"},1000,blink)
+
+        $("#logo").animate({width:"+=30",height:"+=10px"},100,setback)
+
+        
+    })
+
+    var a ;
+    a = new Audio
+
+    function setback()
+    {
+        document.body.style.backgroundImage="url(https://i.pinimg.com/originals/b2/e2/6d/b2e26db0f71209884f03fb6a3487fb08.gif)"
+
+        document.body.style.backgroundSize = "300px 300px";
+             document.body.style.backgroundRepeat = "no-repeat";
+              document.body.style.backgroundPosition = "center 200px";
+
+
+        a.play()
+
+        setTimeout("openhome()",5000)
+
+    }
+
+    box.onclick = function()
+    {
+          a.pause()
+    }
+
+
+         function changecolor()
+         {
+            box.style.background="black"
+            box.style.color="cyan"
+         }
+
+         var r,g,b,c
+         function blink()
+         {
+            r = Math.round(Math.random()*255)
+            g = Math.round(Math.random()*255)
+            b = Math.round(Math.random()*255)
+            c = `rgb(${r},${g},${b})`
+            box.style.color=c
+            setTimeout("blink()",1000)
+            
+         }
+
+
+         function openhome()
+         {
+            location.href=""
+         }
+</script>
+
+
+</body>
+</html>
