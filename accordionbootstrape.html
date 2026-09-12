@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+
+<style>
+    body
+{
+     background-color: #fbffca;
+}
+
+</style>
+<body>
+<div class = "container">
+
+    <h1 class ="text-center text-bg-warning mt-4 rounded-2" style="font-family:Arial, Helvetica, sans-serif;">ACCORDION</h1>
+
+    <div class="accordion mt-5" data-bs-theme="dark" id="accordionExample">
+  <div class="accordion-item>
+    <h2 class="accordion-header">
+      <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        NATURE IMAGE
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body text-center">
+      <img src = "https://i.pinimg.com/1200x/54/2c/6a/542c6ace9988a9c1b45c5342c9e50e86.jpg" width="400" class="img-fluid rounded -circle ">
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        MOUNTAIN IMAGE
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body text-center">
+              <img src = "https://i.pinimg.com/736x/1f/e6/2c/1fe62c5f107d6193a7003e1438984bdd.jpg" width="500" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        BIRDS IMAGE
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body text-center">
+          <img src = "https://i.pinimg.com/736x/62/57/24/6257243992e4cbc3761e086a4a0dab7e.jpg" width="350" class="img-fluid rounded">
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
